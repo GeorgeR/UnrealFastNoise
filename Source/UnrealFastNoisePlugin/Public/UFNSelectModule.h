@@ -1,11 +1,13 @@
 #pragma once
 
-#include "UFNNoiseGenerator.h"
 #include "CoreMinimal.h"
+#include "UFNNoiseGenerator.h"
+
 #include "UFNSelectModule.generated.h"
 
 UCLASS()
-class UNREALFASTNOISEPLUGIN_API UUFNSelectModule : public UUFNNoiseGenerator
+class UNREALFASTNOISEPLUGIN_API UUFNSelectModule 
+	: public UUFNNoiseGenerator
 {
 	GENERATED_UCLASS_BODY()
 public:
@@ -24,5 +26,4 @@ public:
 	float falloff;
 	ESelectInterpType interpType;
 	int32 numSteps;
-
 };
